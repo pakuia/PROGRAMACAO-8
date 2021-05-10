@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>informações do usuário</title>
+	</head>
+	<body>
+		<form action="info.php" method="GET">
+			<p align="center">Nome: <input type="text" name="nome" size="30"></p>
+			<p align="center">E-mail: <input type="text" name="mail" size="30"></p>
+			<p align="center"><input type="submit" value="enviar"></p>
+		</form>
+	</body>
+
+	<?php
+		$nome = $_GET['nome'];
+		$mail = $_GET['mail'];
+		echo “<p align='center'>Meu nome é $nome</p>";
+		echo "<p align='center'>Meu e-mail é $mail</p>”;
+	?>
+
+</html>
